@@ -10,8 +10,10 @@ public class Bootcamp {
 
 	private String nome;
 	private String descricao;
+	
 	private final LocalDate dataInicial = LocalDate.now();
-	private final LocalData dataFinal = dataInicial.plusDays(45);
+	private final LocalDate dataFinal = dataInicial.plusDays(45);
+	
 	private Set<Dev> devsInscritos = new HashSet<>();
 	private Set<Conteudo> conteudos = new LinkedHashSet<Conteudo>();
 	
@@ -43,7 +45,7 @@ public class Bootcamp {
 	public LocalDate getDataInicial() {
 		return dataInicial;
 	}
-	public LocalData getDataFinal() {
+	public LocalDate getDataFinal() {
 		return dataFinal;
 	}
 	@Override
